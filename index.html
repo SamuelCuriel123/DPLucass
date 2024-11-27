@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Fotografias</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Portfólio de Fotografias</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#" data-section="inicio">Início</a></li>
+      <li><a href="#" data-section="sobre">Sobre</a></li>
+      <li><a href="#" data-section="galeria">Galeria</a></li>
+      <li><a href="#" data-section="contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio" class="secao ativo">
+      <h2>Portfólio de Fotografias</h2>
+      <p>Este site foi feito para mostrar algumas das fotos que eu capturei ao longo do tempo. Cada imagem tem um significado especial, seja de viagens, momentos do dia a dia ou até detalhes que me chamaram a atenção.</p>
+      <p>A ideia aqui é compartilhar essas fotos de uma maneira simples, para que você possa dar uma olhada e ver o que eu vejo através das minhas lentes. Para mim, a fotografia é uma forma de capturar sentimentos e momentos, e eu tento mostrar a beleza que encontro nas pequenas coisas.</p>
+      <p>Fique à vontade para explorar a galeria e, quem sabe, se identificar com alguma das imagens. Espero que elas possam transmitir algo para você, assim como significam para mim.</p>
+    </section>
+
+    <section id="sobre" class="secao">
+      <h2>Sobre o Projeto</h2>
+      <p>Este site foi desenvolvido com o objetivo de aprimorar meu aprendizado em desenvolvimento web, unindo teoria e prática em um trabalho criativo. Ele foi criado por mim, Samuel dos Santos Curiel, aluno do Terceiro Informática Continuidade, como parte do meu processo de estudos na área de tecnologia.</p>
+      <p>Além de exibir as fotografias que capturei, aqui também compartilho minha visão artística e os tipos de imagens que gosto de explorar. As fotos que compõem a galeria incluem detalhes da natureza, como insetos e minerais, imagens científicas, como observações em microscópio, e até registros do ambiente ao meu redor. Meu objetivo é trazer um olhar único para cada elemento, revelando a beleza em temas variados e muitas vezes pouco notados.</p>
+      <p>Este site combina minhas paixões por fotografia e programação, funcionando tanto como um portfólio visual quanto técnico. Espero que você aprecie as imagens e o cuidado aplicado na criação deste espaço, que reflete o meu esforço para crescer nas áreas de arte e tecnologia!</p>
+    </section>
+
+    <section id="galeria" class="secao">
+      <h2>Galeria de Fotos</h2>
+      <div class="galeria">
+        <div class="item-galeria">
+          <img src="img/insetos.png" alt="Imagem da galeria 1">
+        </div>
+        <div class="item-galeria">
+          <img src="img/pedras.png" alt="Imagem da galeria 2">
+        </div>
+        <div class="item-galeria">
+          <img src="img/micro.png" alt="Imagem da galeria 3">
+        </div>
+        <div class="item-galeria">
+          <img src="img/paisagem.png" alt="Imagem da galeria 4">
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao">
+      <form>
+        <h2>Entre em Contato</h2>
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu email" required>
+        <textarea id="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <div class="modal"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
